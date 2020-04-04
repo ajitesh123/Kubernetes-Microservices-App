@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: ajitesh1/udacity-reverseproxy:${SHA:-latest} 
+  backend_user:
+    build:
+      context: ../../udacity-c3-restapi-user
+    image: ajitesh1/udacity-restapi-user:${SHA:-latest}
+  backend_feed:
+    build:
+      context: ../../udacity-c3-restapi-feed  
+    image: ajitesh1/udacity-restapi-feed:${SHA:-latest}
+  frontend:
+    build:
+      context: ../../udacity-c3-frontend  
+    image: ajitesh1/udacity-frontend:${SHA:-latest}
