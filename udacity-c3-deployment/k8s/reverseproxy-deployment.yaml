@@ -15,7 +15,7 @@ spec:
         app: reverseproxy
     spec:
       containers:
-      - image: hupe1980/udacity-reverseproxy
+      - image: ajitesh1/udacity-reverseproxy
         name: reverseproxy
         imagePullPolicy: Always          
         resources:

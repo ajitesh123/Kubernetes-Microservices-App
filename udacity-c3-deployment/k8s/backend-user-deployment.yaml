@@ -15,7 +15,7 @@ spec:
         app: backend-user
     spec:
       containers:
-      - image: hupe1980/udacity-restapi-user
+      - image: ajitesh1/udacity-restapi-user
         name: backend-user 
         imagePullPolicy: Always  
         resources:

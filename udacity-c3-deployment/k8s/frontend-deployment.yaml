@@ -16,7 +16,7 @@ spec:
         api: external        
     spec:
       containers:
-      - image:  hupe1980/udacity-frotend
+      - image: ajitesh1/udacity-frontend
         name: frontend
         imagePullPolicy: Always          
         ports:
